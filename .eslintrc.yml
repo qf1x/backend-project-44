@@ -1,9 +1,12 @@
 env:
   node: true
   es2021: true
-extends: airbnb-base
-overrides: []
+extends: - airbnb-base
+overrides: 
 parserOptions:
-  ecmaVersion: latest
+  ecmaVersion:
   sourceType: module
-rules: {}
+rules:
+  no-console: 0
+  import/extensions: 0
+
