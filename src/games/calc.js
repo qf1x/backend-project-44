@@ -18,7 +18,7 @@ const calculate = (operator, operand0, operand1) => {
     case '*':
       return operand0 * operand1;
     default:
-      return Error('Incorrect operator');
+    
   }
 };
 
