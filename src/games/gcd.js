@@ -27,7 +27,7 @@ const runGcdGame = () => {
 };
 
 export default runGcdGame;
- 
+
 /*  здесь функция генерирует два случайных числа, нужно найти НОД.
 функция getgcd находит НОД
 

@@ -9,16 +9,16 @@ const getRandOperator = () => {
   return operators[randOperatorIndex];
 };
 
-const calculate = (operator, operand0, operand1) => {
+const calculate = (operator, operand1, operand2) => {
   switch (operator) {
     case '+':
-      return operand0 + operand1;
+      return operand1 + operand2;
     case '-':
-      return operand0 - operand1;
+      return operand1 - operand2;
     case '*':
-      return operand0 * operand1;
+      return operand1 * operand2;
     default:
-    
+      return Error('Incorrect operator');
   }
 };
 
@@ -41,7 +41,7 @@ const runCalcGame = () => {
 
 export default runCalcGame;
 
-/*экспортируется функция runCalcGame. 
+/* экспортируется функция runCalcGame.
 генерируется определенное количество раундов каждый состоит из случайного числа.
 числа генерируются случайным образом с помощью двух операндов и оператора.
 Этот модуль зависит от двух других модулей utils.js и gameLogic.

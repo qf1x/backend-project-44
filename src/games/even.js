@@ -4,24 +4,24 @@ import runGameLogic, { roundsNumber } from '../gameLogic.js';
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => number % 2 === 0;
- const generateRound = () => {
-    const question = getRandomNumber(1 , 100);
-    const correctAnswer = isEven(question) ? 'yes' : 'no';
-    return [question, correctAnswer];
- };
+const generateRound = () => {
+  const question = getRandomNumber(1, 100);
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
+};
 
- const runEvenGame = () => {
-    const rounds = [];
-    for (let i = 0; i < roundsNumber; i += 1) {
-        rounds[i] = generateRound();
-    }
-    return runGameLogic(rounds, description); 
- };
+const runEvenGame = () => {
+  const rounds = [];
+  for (let i = 0; i < roundsNumber; i += 1) {
+    rounds[i] = generateRound();
+  }
+  return runGameLogic(rounds, description);
+};
 
- export default runEvenGame;
+export default runEvenGame;
 
- /* экспортируется функция runEvenGame.
+/* экспортируется функция runEvenGame.
 Функция isEven определяет является ли число четным
 В функции generateRound случайное число генерируется с помощью функции
-Сгенерированные раунды передаются в функцию runGameLogic и происходит запуск игры 
+Сгенерированные раунды передаются в функцию runGameLogic и происходит запуск игры
  */
