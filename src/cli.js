@@ -7,3 +7,7 @@ const sayGreetings = () => {
 };
 
 export default sayGreetings;
+
+
+/*  функция приветствует пользователя и запрашивает имя с помощью библиотеки readlineSync. 
+*/

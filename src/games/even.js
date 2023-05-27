@@ -20,3 +20,8 @@ const isEven = (number) => number % 2 === 0;
 
  export default runEvenGame;
 
+ /* экспортируется функция runEvenGame.
+Функция isEven определяет является ли число четным
+В функции generateRound случайное число генерируется с помощью функции
+Сгенерированные раунды передаются в функцию runGameLogic и происходит запуск игры 
+ */
